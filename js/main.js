@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 document.getElementById('hiddenBlock').style.display='none';
+=======
+
+document.getElementById('hid').style.display='none';
+
+>>>>>>> FETCH_HEAD
 
 function checkForm() {
     if (document.getElementById('text').value!='' || document.getElementById('digital').value!='' || document.getElementById('dating').value!='') 
