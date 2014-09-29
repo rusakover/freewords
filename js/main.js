@@ -42,7 +42,7 @@ function translateEN(){
                 transl['щ']='shсh';
                 transl['ъ']='"';
                 transl['ы']='y\'';
-                transl['ь']='\'';
+                transl['ь']='';
                 transl['э']='e\'';
                 transl['ю']='yu';
                 transl['я']='ya';
