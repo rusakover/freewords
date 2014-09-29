@@ -3,7 +3,7 @@
 
 <h3>Список id из html для использования:</h3>
 
-<h4>Поля (.value):</h4>
+<h4>Поля формы (.value):</h4>
 nameField - поле Имена<br/>
 summaField - поле Сумма<br/>
 dateField - поле Дата<br/>
