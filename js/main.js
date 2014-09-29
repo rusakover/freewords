@@ -6,7 +6,7 @@ function checkForm() {
         return true;
     else return false;
 };
-function summaPropisEN(){
+function datePropisRU(){
  var text=document.getElementById('dateField').value;
  var resultDate;
  var userMounth;
