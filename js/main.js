@@ -1,4 +1,4 @@
-КУКУ!!
+КУКУ!!рекукукуку
 document.getElementById('hid').style.display='none';
 
 function checkForm() {
