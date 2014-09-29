@@ -1,13 +1,9 @@
-<<<<<<< HEAD
+
 document.getElementById('hiddenBlock').style.display='none';
-=======
 
-document.getElementById('hid').style.display='none';
-
->>>>>>> FETCH_HEAD
 
 function checkForm() {
-    if (document.getElementById('text').value!='' || document.getElementById('digital').value!='' || document.getElementById('dating').value!='') 
+    if (document.getElementById('nameField').value!='' || document.getElementById('summaField').value!='' || document.getElementById('dateField').value!='') 
         return true;
     else return false;
 };
@@ -15,7 +11,7 @@ function checkForm() {
 
 function translateEN(){
         if (checkForm()==true) {  //проверка Chekform перед выполнением функции
-            var text=document.getElementById('text').value;
+            var text=document.getElementById('nameField').value;
             var transl=new Array(); // массив по Е.Н. Тамарченко
                 transl['а']='a';
                 transl['б']='b';
@@ -118,11 +114,11 @@ function translateEN(){
                 } // конец перебора всех букв
             	result=result.toUpperCase(); // преобразование строки во все буквы прописные
             if (result!='') {
-                document.getElementById('transtextp').innerHTML=result;
-                document.getElementById('hid').style.display='';
+                document.getElementById('nameResult').innerHTML=result;
+                document.getElementById('hiddenBlock').style.display='';
             } 
 			
         } // Проверка checkForm
-        else document.getElementById('transtextp').innerHTML='Заполните одно из полей!';
+        else document.getElementById('nameResult').innerHTML='Заполните одно из полей!';
                 document.getElementById('hiddenBlock').style.display='';
 };

@@ -47,14 +47,14 @@
 						<div class="col-lg-4 col-md-4">
 								<h4 class="lettering">Имена:</h4>
 								<div class="form-group">
-									<input type="text" class="form-control input-lg" id="text" placeholder="Иванов Петр Сергеевич" autofocus/>
+									<input type="text" class="form-control input-lg" id="nameField" placeholder="Иванов Петр Сергеевич" autofocus/>
 									<span class="help-block">Введите ФИО в необходимой последовательности</span>
 								</div>
 								<hr/>
 								<h4 class="lettering">Сумма прописью:</h4>
 								<div class="form-group">
 									<!-- <label for="digital">Сумма прописью</label> -->
-									<input type="text" class="form-control input-lg" id="digital" placeholder="Введите цифры">
+									<input type="text" class="form-control input-lg" id="summaField" placeholder="Введите цифры">
 									<span class="help-block">Введите цифры для транслитерации</span>
 								</div>
 
@@ -63,17 +63,17 @@
 								<h4 class="lettering">Дата:</h4>
 								<div class="form-group">
 								<!-- 	<label for="date">Введите дату</label> -->
-									<input type="date" class="form-control input-lg" id="dating" placeholder="Введите отчество">
+									<input type="date" class="form-control input-lg" id="dateField" placeholder="Введите отчество">
 								</div>
 
 								<hr/>
 								<h4 class="lettering source">Язык:</h4>
 								<div class="btn-group" data-toggle="buttons">
 									<label class="btn btn-primary active">
-										<input type="radio" name="options" id="toEnglish" checked> Английский
+										<input type="radio" name="options" id="englishCheck" checked> Английский
 									</label>
 									<label class="btn btn-primary">
-										<input type="radio" name="options" id="toRussian">Русский
+										<input type="radio" name="options" id="russianCheck">Русский
 									</label>
 
 								</div>
@@ -85,10 +85,10 @@
 								<!-- СКРЫТЫЙ РАЗДЕЛ, появляется при Результате -->
 									<div class="form-group" id="hiddenBlock">
 										<h4 class="lettering result">Результат:</h4>
-										<p class="lead zub" id="transtextp" ></p>
+										<p class="lead zub" id="nameResult"></p>
 										<span class="help-block">Используйте это написание при переводе, чтобы соблюсти стандарты транслитерации в России</span>
 										<p class="lead zub" id="summaResult"></p>
-										<p class="lead zub" id="dataResult"></p>
+										<p class="lead zub" id="dateResult"></p>
 									</div>
 								<!--  -->
 						</div>

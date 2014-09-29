@@ -45,7 +45,6 @@ color: rgba(21,212,139,1);
 	padding-bottom: 10px;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-
 }
 
 
@@ -62,9 +61,8 @@ font-family: 'PT Mono', Arial;
    line-height: 15px;
    color: rgba(23,51,176,1);
    font-size: 18px;
-
-
 }
+
 .butn:hover {
 	background-color: rgba(21,56,212,1);
    border: solid 3px rgba(21,56,212,1);
@@ -126,4 +124,4 @@ input, .btn, .btn-success, .btn-lg { outline: none;}
     background-clip: padding-box, border-box, border-box, border-box, border-box;
     background-origin: padding-box, border-box, border-box, border-box, border-box;
 
-}
+};
