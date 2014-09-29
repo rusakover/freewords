@@ -1,17 +1,17 @@
 <h1>Freewords.ru</h1>
 Главный репозиторий Freewords.ru, принадлежит всей организации
 
-<h2>Список id из html для использования:</h2>
+<h3>Список id из html для использования:</h3>
 
-<h3>Поля (.value):</h3>
+<h4>Поля (.value):</h4>
 nameField - поле Имена<br/>
 summaField - поле Сумма<br/>
 dateField - поле Дата<br/>
 
-<h3>"поля" для вывода результатов (.innerHTML):</h3>
+<h4>"Поля" для вывода результатов (.innerHTML):</h4>
 nameResult <br/>
 summaResult<br/>
 dateResult<br/>
 
-<h3>Блоки:</h3>
+<h4>Блоки:</h4>
 hiddenBlock — блок, который скрывается<br/>
