@@ -1,4 +1,3 @@
-
 document.getElementById('hiddenBlock').style.display='none';
 
 
@@ -7,7 +6,55 @@ function checkForm() {
         return true;
     else return false;
 };
+function summaPropisEN(){
+ var text=document.getElementById('dateField').value;
+ var resultDate;
+ var userMounth;
+var day=new Array(); // массив чисел месяца
+		day[1] = 'Первого'; day[2] = 'Второго'; day[3] = 'Третьего';
+		day[4] = 'Четвертого'; 	day[5] = 'Пятого'; 	day[6] = 'Шестого';
+		day[7] = 'Седьмого'; 	day[8] = 'Восьмого'; 	day[9] = 'Девятого';
+		day[10] = 'Десятого'; 	day[11] = 'Одиннадцатого'; 	day[12] = 'Двенадцатого';
+		day[13] = 'Тринадцатого'; 	day[14] = 'Четырнадцатого'; day[15] = 'Пятнадцатого';
+		day[16] = 'Шестнадцатого'; 	day[17] = 'Семнадцатого'; 	day[18] = 'Восемнадцатого';
+		day[19] = 'Девятнадцатого'; day[20] = 'Двадцатого'; day[21] = 'Двадцать первого';
+		day[22] = 'Двадцать второго'; day[23] = 'Двадцать третьего'; day[24] = 'Двадцать четвертого';
+		day[25] = 'Двадцать пятого'; day[26] = 'Двадцать шестого'; 	day[27] = 'Двадцать седьмого';
+		day[28] = 'Двадцать восьмого'; 	day[29] = 'Двадцать девятого'; 	day[30] = 'Тридцатого';
+		day[31] = 'Тридцать первого'; 
 
+		resultDate=text;
+		var userDay;
+		userDay=resultDate.substr(8,2); // из строки даты извлекается день (формат представления 2011-11-01 где 01 - день (первое)
+		var Daystr;
+		Daystr=day[parseInt(userDay)]; // значение из строки переводится с помощью функции parseInt в числовое значение, далее согласно массиву переменной Daystr присваивается строковое значение 
+		var Mountstr;
+		userMounth=resultDate.slice(5,-3);// из строки даты извлекается день (формат представления 2011-11-01 где 01 - день (первое)
+	switch (userMounth) {
+		case '01': 	Mountstr = ' января';	break;
+		case '02':	Mountstr = ' февраля'; break;
+		case '03': 	Mountstr = ' марта';break;
+		case '04': 	Mountstr = ' апреля';break;
+		case '05': 	Mountstr = ' мая';break;
+		case '06': 	Mountstr = ' июня';break;
+		case '07': 	Mountstr = ' июля';break;
+		case '08': 	Mountstr = ' августа';break;
+		case '09': 	Mountstr = ' сентября';break;
+		case '10': 	Mountstr = ' октября';break;
+		case '11': 	Mountstr = ' ноября';break;
+		case '12': 	Mountstr = ' декабря';break;}
+	
+
+ resultDate=Daystr+Mountstr;
+ if (resultDate!='') {
+                document.getElementById('dateResult').innerHTML=resultDate;
+                document.getElementById('hiddenBlock').style.display='';}
+var kk=1;
+
+ 
+ 
+
+}
 
 function translateEN(){
         if (checkForm()==true) {  //проверка Chekform перед выполнением функции
