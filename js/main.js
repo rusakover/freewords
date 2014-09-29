@@ -1,5 +1,5 @@
-КУКУ!!
-document.getElementById('hid').style.display='none';
+// КУКУ!!
+document.getElementById('hiddenBlock').style.display='none';
 
 function checkForm() {
     if (document.getElementById('text').value!='' || document.getElementById('digital').value!='' || document.getElementById('dating').value!='') 
@@ -119,5 +119,5 @@ function translateEN(){
 			
         } // Проверка checkForm
         else document.getElementById('transtextp').innerHTML='Заполните одно из полей!';
-                document.getElementById('hid').style.display='';
+                document.getElementById('hiddenBlock').style.display='';
 };

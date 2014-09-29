@@ -37,7 +37,7 @@
 
 		<!-- Заголовок страницы -->
 			<div class="page-header">
-				<h2>Транслитерация</h2>
+				<h2 class="lettering">Транслитерация</h2>
 				<p class="lead">Для транслитерации заполните одно из полей ниже и нажмите кнопку!</p>
 
 			</div>
@@ -45,31 +45,29 @@
 			<!-- Форма -->
 				<div class="row">
 						<div class="col-lg-4 col-md-4">
-								<h4 class="result source">Имена:</h4>
+								<h4 class="lettering">Имена:</h4>
 								<div class="form-group">
 									<input type="text" class="form-control input-lg" id="text" placeholder="Иванов Петр Сергеевич" autofocus/>
 									<span class="help-block">Введите ФИО в необходимой последовательности</span>
 								</div>
 								<hr/>
-								<h4 class="result source">Сумма прописью:</h4>
+								<h4 class="lettering">Сумма прописью:</h4>
 								<div class="form-group">
 									<!-- <label for="digital">Сумма прописью</label> -->
 									<input type="text" class="form-control input-lg" id="digital" placeholder="Введите цифры">
 									<span class="help-block">Введите цифры для транслитерации</span>
 								</div>
-								
-								
 
 								<!-- Дополнительное поле Дата --> 
 								<hr/>
-								<h4 class="result source">Дата:</h4>
+								<h4 class="lettering">Дата:</h4>
 								<div class="form-group">
 								<!-- 	<label for="date">Введите дату</label> -->
 									<input type="date" class="form-control input-lg" id="dating" placeholder="Введите отчество">
 								</div>
 
 								<hr/>
-								<h4 class="result source">Язык:</h4>
+								<h4 class="lettering source">Язык:</h4>
 								<div class="btn-group" data-toggle="buttons">
 									<label class="btn btn-primary active">
 										<input type="radio" name="options" id="toEnglish" checked> Английский
@@ -85,10 +83,10 @@
 						<div class="col-lg-4 col-md-4">
 								
 								<!-- СКРЫТЫЙ РАЗДЕЛ, появляется при Результате -->
-									<div class="form-group" id="result">
-									<h4 class="result">Результат:</h4>
-									<p class="lead zub" id="transtextp" ></p>
-									<span class="help-block">Используйте это написание при переводе, чтобы соблюсти стандарты транслитерации в России</span>
+									<div class="form-group" id="hiddenBlock">
+										<h4 class="lettering result">Результат:</h4>
+										<p class="lead zub" id="transtextp" ></p>
+										<span class="help-block">Используйте это написание при переводе, чтобы соблюсти стандарты транслитерации в России</span>
 								</div>
 								<!--  -->
 						</div>
