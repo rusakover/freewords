@@ -22,6 +22,7 @@ a {
   color:white;
 }
 
+
 h2, .h2 {
 	/*font-size: 46px;*/
 	/*text-transform: uppercase;*/
@@ -85,10 +86,9 @@ border-color: #BCBCBC;
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
 color: #fff;
 background-color: rgba(21,56,212,1);
-border-color: rgba(21,56,212,1);
+border-color: rgba(21,56,212,1);}
 
 input, .btn, .btn-success, .btn-lg { outline: none;}
-
 
 /* Зубчики внизу */
 .zub {
@@ -125,3 +125,5 @@ input, .btn, .btn-success, .btn-lg { outline: none;}
     background-origin: padding-box, border-box, border-box, border-box, border-box;
 
 };
+
+
