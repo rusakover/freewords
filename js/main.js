@@ -1,3 +1,4 @@
+КУКУ!!
 document.getElementById('hid').style.display='none';
 
 function checkForm() {
