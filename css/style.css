@@ -1,18 +1,25 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Mono|PT+Serif&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|PT+Mono|PT+Serif&subset=latin,cyrillic);
+@import url(sticky-footer.css);
+
 /* font-family: 'PT Sans', sans-serif, Arial;
 font-family: 'PT Mono', Arial;
 font-family: 'PT Serif', serif, Times New Roman; */
 
+
 body {
 font-family: 'PT Sans', sans-serif, Arial;
+/*background-color: #f8f8f8;*/
 }
 
-header img {
+
+
+.navbar-header img {
 	width: 200px;
-	padding: 20px 0;
+	padding: 30px 0;
 	}
+
 a {
-	font-family: 'PT Mono', Arial;
+font-family: 'PT Mono', sans-serif, Arial;
 	color:rgba(23,51,176,1);}
 
 .nav > li > a:hover,
@@ -37,10 +44,11 @@ h2, .h2 {
 
 }
 
-/* Заголовки */
+/* ------------------ Заголовки */
 .result {
 color: rgba(21,212,139,1); 
 }
+
 
 .lettering {
 	padding-bottom: 10px;
@@ -48,8 +56,11 @@ color: rgba(21,212,139,1);
 	letter-spacing: .1em;
 }
 
+.help-block {
+color: #888;
+}
 
-/* Кнопки */
+/*------------------ Кнопки */
 .butn {
 font-family: 'PT Mono', Arial;
    background-color: white;
@@ -78,10 +89,16 @@ font-family: 'PT Mono', Arial;
 }
 
 .btn-primary {
-color: #fff;
-background-color: #C7C7C7;
-border-color: #BCBCBC;
+color: #888;
+background-color: white;
+border-color: #DDDDDD;
 }
+
+.dropdown-toggle.btn-default  {background-color: transparent;}
+.btn-default:hover, .btn-default:focus,  .btn-default:active, .btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    background-color: rgba(21,56,212,1);
+    color: white;}
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
 color: #fff;
@@ -89,13 +106,14 @@ background-color: rgba(21,56,212,1);
 border-color: rgba(21,56,212,1);}
 
 input, .btn, .btn-success, .btn-lg { outline: none;}
+.input-lg {border-radius: 3px;}
 
-/* Зубчики внизу */
+/* ------------------Зубчики внизу */
 .zub {
   display: inline-block;
     vertical-align: middle;
     width: 100%;
-    padding: 10px 10px;
+    padding: 10px 20px;
     margin: -10px 0 5px 0;
     border: 10px solid transparent;
     border-width: 10px 0;
@@ -123,7 +141,16 @@ input, .btn, .btn-success, .btn-lg { outline: none;}
     background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
     background-clip: padding-box, border-box, border-box, border-box, border-box;
     background-origin: padding-box, border-box, border-box, border-box, border-box;
+}
 
-};
+.zub > .primary {
+  background:rgba(255, 255, 255, 0.5);
+  border-left: 2px solid red; 
+  margin: 0 -20px 20px -20px; 
+  padding: 10px 20px 10px 20px;
+}
 
+.form-group {
+margin-bottom: 25px;
+}
 
