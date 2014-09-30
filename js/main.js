@@ -9,7 +9,8 @@ function checkForm() {
 function datePropisRU(){
  var text=document.getElementById('dateField').value;
  var resultDate;
- var userMounth;
+ var userMounth;var userDay;var Daystr;var Mountstr;
+ 
 var day=new Array(); // массив чисел месяца
 		day[1] = 'Первого'; day[2] = 'Второго'; day[3] = 'Третьего';
 		day[4] = 'Четвертого'; 	day[5] = 'Пятого'; 	day[6] = 'Шестого';
@@ -23,16 +24,25 @@ var day=new Array(); // массив чисел месяца
 		day[28] = 'Двадцать восьмого'; 	day[29] = 'Двадцать девятого'; 	day[30] = 'Тридцатого';
 		day[31] = 'Тридцать первого'; 
 
-		resultDate=text;
-		var userDay;
-		userDay=resultDate.substr(8,2); // из строки даты извлекается день (формат представления 2011-11-01 где 01 - день (первое)
-		var Daystr;
-		Daystr=day[parseInt(userDay)]; // значение из строки переводится с помощью функции parseInt в числовое значение, далее согласно массиву переменной Daystr присваивается строковое значение 
-		var Mountstr;
-		userMounth=resultDate.slice(5,-3);// из строки даты извлекается день (формат представления 2011-11-01 где 01 - день (первое)
+var year=new Array();
+	year[1]='одна тысяча'; year[2]='две тысячи'; year[3]='три тысячи';year[0]='' //- тысячелетия
+	year[11] = 'сто'; 	year[12] = 'двести';	year[13] = 'триста';	year[14] = 'четыреста';	year[15] = 'пятьсот';	year[16] = 'шестьсот';	year[17] = 'семьсот'; 	year[18] = 'восемьсот';
+	year[19] = 'девятьсот'; // - столетия
+	
+	year[21]= 'десятого';year[22]= 'двадцатого';year[23]= 'тридцатого';year[24]= 'сорокового';year[25]= 'пятьдесятого';year[26]= 'шестьдесятого';year[27]= 'семидесятого';year[28]= 'восьмидесятого';year[29]= 'девяностого';
+	
+	year[33]= 'тридцать';year[34]= 'сорок';year[35]= 'пятьдесят';year[36]= 'шестьдесят';year[37]= 'семьдесят';year[38]= 'восемьдесят';year[39]= 'девяносто';
+	
+	year[41]= 'сотого';year[42]= 'двухсотого';year[43]= 'трехсотого';year[44]= 'четырехсотого';year[45]= 'пятисотого';year[46]= 'шестисотого';year[47]= 'семисотого';year[48]= 'восьмисотого'; year[47]= 'девятисотого';
+	
+	resultDate=text;
+	userDay=resultDate.substr(8,2); // из строки даты извлекается день (формат представления 2011-11-01 где 01 - день (первое)
+	Daystr=day[parseInt(userDay)]; // значение из строки переводится с помощью функции parseInt в числовое значение, далее согласно массиву переменной Daystr присваивается строковое значение 
+		
+		userMounth=resultDate.slice(5,-3);// из строки даты извлекается день (формат представления 2011-11-01 где 11 - месяц
 	switch (userMounth) {
-		case '01': 	Mountstr = ' января';	break;
-		case '02':	Mountstr = ' февраля'; break;
+		case '01': 	Mountstr = ' января';break;
+		case '02':	Mountstr = ' февраля';break;
 		case '03': 	Mountstr = ' марта';break;
 		case '04': 	Mountstr = ' апреля';break;
 		case '05': 	Mountstr = ' мая';break;
@@ -43,18 +53,47 @@ var day=new Array(); // массив чисел месяца
 		case '10': 	Mountstr = ' октября';break;
 		case '11': 	Mountstr = ' ноября';break;
 		case '12': 	Mountstr = ' декабря';break;}
+	// Выяснение введенного года - самое сложное :)
 	
+		var yTen='';
+		var yHund='';
+		var yYear='';
+		var YearStr='';
+		var strYear='';
+		YearStr=resultDate.substr(0,4);
+		
+		yTen=parseInt(YearStr.substr(2,2)); // переменной присваивается значение десятков 
+		var k='';
+		var l='';
+		if (yTen > 1 && yTen< 20) {
+			strYear=day[yTen];
+			strYear+=' года'; }
+		else if (yTen > 19 && yTen<100) {
+			k=parseInt(YearStr.substr(2,1)) + 20;
+			strYear=' '+year[k];
+			l=parseInt(YearStr.substr(3,1));
+			if (l!=0) {
+				strYear+=day[l];	
+				strYear+=' года';
+			}
+			else strYear+=' года';
+		}
+		
+		strYear=strYear.toLowerCase();
+		var t=1;
+		
+		
+		
 
- resultDate=Daystr+Mountstr;
+	
+	
+	
+ resultDate=Daystr+Mountstr + strYear;
  if (resultDate!='') {
                 document.getElementById('dateResult').innerHTML=resultDate;
                 document.getElementById('hiddenBlock').style.display='';}
 var kk=1;
-
- 
- 
-
-}
+ }
 
 function translateEN(){
         if (checkForm()==true) {  //проверка Chekform перед выполнением функции

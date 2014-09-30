@@ -47,7 +47,7 @@
 						<div class="col-lg-4 col-md-4">
 								<h4 class="lettering">Имена:</h4>
 								<div class="form-group">
-									<input type="text" class="form-control input-lg" id="nameField" placeholder="Иванов Петр Сергеевич" autofocus/>
+									<input type="text" class="form-control input-lg" id="nameField" placeholder="Иванов Петр Сергеевич" onblur="translateEN()" autofocus/>
 									<span class="help-block">Введите ФИО в необходимой последовательности</span>
 								</div>
 								<hr/>
@@ -60,17 +60,17 @@
 
 								<!-- Дополнительное поле Дата --> 
 								<hr/>
-								<h4 class="lettering">Дата:</h4>
+								<h4 class="lettering">Дата: (διὰ πασῶν 1900-2100)</h4>								
 								<div class="form-group">
 								<!-- 	<label for="date">Введите дату</label> -->
-									<input type="date" class="form-control input-lg" id="dateField" placeholder="Введите отчество">
+									<input type="date" class="form-control input-lg" id="dateField" placeholder="Введите отчество" min="1900-01-01" max="2100-01-01">
 								</div>
 
 								<hr/>
 								<h4 class="lettering source">Язык:</h4>
 								<div class="btn-group" data-toggle="buttons">
 									<label class="btn btn-primary active">
-										<input type="radio" name="options" id="englishCheck" checked> Английский
+										<input type="radio" name="options" id="englishCheck" checked> English
 									</label>
 									<label class="btn btn-primary">
 										<input type="radio" name="options" id="russianCheck">Русский
