@@ -80,12 +80,12 @@
 			<!-- Форма -->
 				<div class="row">
 
-						<div class="col-lg-4 col-md-4">
+						<div class="col-lg-4 col-md-6">
 								
 								<div class="form-group">
 								<h4 class="lettering"><!-- <span class="glyphicon glyphicon-pencil"></span> -->имя:</h4>
 									<input type="text" class="form-control input-lg" id="nameField" placeholder="Иванов Петр Сергеевич" onblur="translateEN()" autofocus/>
-									<span class="help-block">Выберите язык, на который транслитирировать</span>
+									<span class="help-block">Введите имя, фамилию и отчество для транслитерации</span>
 								</div>
 
 								<div class="form-group">
@@ -96,62 +96,48 @@
 										<input type="radio" name="options" id="englishCheck" checked> Английский
 									</label>
 									<label class="btn btn-primary">
-										<input type="radio" name="options" id="russianCheck">Русский
-									</label>
-									<label class="btn btn-primary">
 										<input type="radio" name="options" id="deutscheCheck">Немецкий
 									</label>
+									<label class="btn btn-primary">
+										<input type="radio" name="options" id="russianCheck">Русский
+									</label>
+									
 
 								</div>
 								<span class="help-block">Язык, на который необходима транслитерация</span>
 								</div>
 						</div><!-- /.col-lg-6 -->
-						<div class="col-lg-4 col-md-4">
+						<div class="col-lg-4 col-md-6">
 								
 								<!-- СКРЫТЫЙ РАЗДЕЛ, появляется при Результате -->
 									<div class="form-group" id="hiddenBlock">
 										<h4 class="lettering result">Результат:</h4>
-
-
 										<div class="zub"> <!--____________________ Блок Зубчики -->
 											<div class="primary">
 												<span class="help-block"><i>Российский стандарт:</i></span>
-												<p class="lead" id="nameResult"></p>
+												<p class="lead big" id="nameResult"></p>
 											</div>
-										<div>
-											<span class="help-block"><i>Европейский стандарт:</i></span>
-											<p class="lead" id="">IVANOV PEOTER</p>
-											<span class="help-block"><i>Стандарт ISO3221-3:</i></span>
-											<p class="lead" id="nameResult">IVANOV PETR</p>
-										</div>
-										
-										<!-- <div class="btn-group">
-										  <button class="btn btn-default btn-md dropdown-toggle" type="button" data-toggle="dropdown">
-										 Рекомендуемый <span class="caret"></span>
-										 </button>
-										  <ul class="dropdown-menu">
-										    <li><a href="#" class="active">Тамарченко <span class="glyphicon glyphicon-ok"></span></a></li>
-										     <li><a href="#">Европейский</a></li>
-										      <li><a href="#">Iso-23</a></li>
-										  </ul>
-										</div> -->
-										</div> 
-										<!-- /зубчкики -->
-
-										<span class="help-block">Используйте это написание при переводе, чтобы соблюсти стандарты транслитерации в России</span>
+											<div>
+												<span class="help-block"><i>Европейский стандарт:</i></span>
+												<p class="lead" id="">IVANOV PEOTER</p>
+												<span class="help-block"><i>Стандарт ISO3221-3:</i></span>
+												<p class="lead" id="nameResult">IVANOV PETR</p>
+											</div>
+										</div><!-- /зубчкики -->
+										<span class="help-block">Используйте первое написание при переводе, для соблюдения стандартов транслитерации в России</span>
 									</div>
 								<!--  -->
 						</div>
-							<div class="col-lg-offset-4 col-md-offset-4"></div>
+							<div class="col-lg-offset-4"></div>
 					</div> <!--row-->
 
 					<!-- Кнопка -->
 					<div class="row">
-						<div class="col-lg-4 col-md-4">
+						<div class="col-lg-4 col-md-6">
 							<div class="form-actions">
 							<input id="send" type="button" class="butn"  value="Транслит" onclick="translateEN()">
 						</div>
-						<div class="col-lg-offset-8 col-md-offset-8"></div>
+						<div class="col-lg-offset-8 col-md-offset-6"></div>
 						<hr/>  	
 						
 						</div>
