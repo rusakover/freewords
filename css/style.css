@@ -5,6 +5,9 @@
 font-family: 'PT Mono', Arial;
 font-family: 'PT Serif', serif, Times New Roman; */
 
+/* #ffeebb бежевый
+   rgba(138,237,182,1) синий
+   rgba(23,51,176,1) мятный цвет */
 
 body {
 font-family: 'PT Sans', sans-serif, Arial;
@@ -35,17 +38,20 @@ font-family: 'PT Mono', sans-serif, Arial;
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: rgba(21,56,212,1);
-  color:white;
+  background-color: #ffeebb;
+  color: black;
+
 }
 
-.glyphicon {color: #ddd;}
+
+
 
 h2, .h2 {
 	/*font-size: 46px;*/
 	/*text-transform: uppercase;*/
 	/*letter-spacing: 5px;*/
 	color: #120a8f;
+  word-wrap: break-word;
 }
 /*#78e0e4*/
 .form-control:focus {
@@ -76,8 +82,28 @@ font-size: 14px;
   border-top-color: #ffeebb;
 }
 
+/* --------------------------------------  Иконки -------------------------------------- */
+.fa {color: #ccc;}
 
-/* ------------------ Навигация ------------------------------------ */
+a .fa:hover {color: rgba(21,56,212,1);
+cursor: pointer;}
+
+wbr:before {content: '-';}
+
+p >a, a span.link {
+    color:rgba(21,56,212,1);
+    border-bottom: 1px dotted rgba(21,56,212,1);
+}
+
+p > a:hover, a span.link:hover {
+    color:rgba(21,56,212,1);
+    text-decoration: none;
+    border-bottom: 1px dotted white;
+}
+
+h4 > p {font-size: 14px;}
+
+/* -------------------------------------- Навигация ------------------------------------ */
 .navbar-default .navbar-nav > .open > a, 
 .navbar-default .navbar-nav > .open > a:hover, 
 .navbar-default .navbar-nav > .open > a:focus,
@@ -106,8 +132,7 @@ border-radius: 3px;
 background-color: #ffeebb;
 }
 
-
-/* ------------------ Заголовки ------------------------------------ */
+/* -------------------------------------- Заголовки ------------------------------------ */
 .result {
 color: rgba(21,212,139,1); 
 }
@@ -130,7 +155,7 @@ font-family: 'PT Mono', sans-serif, Arial;
 
 .logo {max-width:200px; margin-top: 20px;}
 
-/*------------------ Кнопки ------------------------------------ */
+/* -------------------------------------- Кнопки ------------------------------------ */
 .butn {
 font-family: 'PT Mono', Arial;
    background-color: white;
@@ -193,7 +218,7 @@ border-color: rgba(21,56,212,1);}
 input, .btn, .btn-success, .btn-lg { outline: none;}
 .input-lg {border-radius: 3px;}
 
-/* ------------------Зубчики внизу ------------------------------------ */
+/* -------------------------------------- Зубчики внизу ------------------------------------ */
 .zub {
   display: inline-block;
     vertical-align: middle;
@@ -231,7 +256,6 @@ input, .btn, .btn-success, .btn-lg { outline: none;}
 
 .zub > .primary {
   /*background:rgba(255, 255, 255, 0.5);*/
-  background: url(../img/herb.png) no-repeat;
   background-position: 95% 95%;
   overflow: visible;
   /*border-bottom: 1px dashed white;*/
@@ -240,6 +264,9 @@ input, .btn, .btn-success, .btn-lg { outline: none;}
   padding: 10px 20px 10px 20px;
   min-height: 100px;
 }
+
+.russian {background: url(../img/herb.png) no-repeat;}
+.british {background: url(../img/british.png) no-repeat;}
 
 
 
