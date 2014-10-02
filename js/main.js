@@ -1,7 +1,8 @@
 document.getElementById('hiddenBlock').style.display='none'; // скрываем блок Результата
 $('#nameField').keyup(checkFieldName); // вместо вставки событий в HTML можно здесь их вставлять. В скобках функция для запуска 
 //keyup — это событие которое появлется при отпускнии клавиши. Подробнее в гугле "события jquery"
-$('#now').click(currentDate);
+
+$('#now').click(currentDate); // При клике на Сегодня запускает функцию подстановки даты  поле
 
 function checkFieldName() { 
     var val = $('#nameField').val(); //это типа document.getElementById но на jQuery (надстройка над javascript)
@@ -19,7 +20,7 @@ function checkFieldName() {
 
 function currentDate() { // Вычисляет текущую дату для dates.html
     var date = new Date();
-    var values = [date.getDate(), date.getMonth()];   // Выдает дату но ьез нулей впереди
+    var values = [date.getDate(), date.getMonth() + 1];   // Выдает дату но ьез нулей впереди
     for( var id in values ) {
         values[ id ] = values[ id ].toString().replace( /^([0-9])$/, '0$1' ); // Добавляет нули
         }

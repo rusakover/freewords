@@ -88,7 +88,6 @@ font-size: 14px;
 a .fa:hover {color: rgba(21,56,212,1);
 cursor: pointer;}
 
-wbr:before {content: '-';}
 
 p >a, a span.link {
     color:rgba(21,56,212,1);
@@ -101,7 +100,7 @@ p > a:hover, a span.link:hover {
     border-bottom: 1px dotted white;
 }
 
-h4 > p {font-size: 14px;}
+a {cursor: pointer;}
 
 /* -------------------------------------- Навигация ------------------------------------ */
 .navbar-default .navbar-nav > .open > a, 
