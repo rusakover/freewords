@@ -39,6 +39,7 @@ font-family: 'PT Mono', sans-serif, Arial;
   color:white;
 }
 
+.glyphicon {color: #ddd;}
 
 h2, .h2 {
 	/*font-size: 46px;*/
