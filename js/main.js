@@ -1,11 +1,20 @@
-document.getElementById('hiddenBlock').style.display='none';
+$('#nameField').keyup(checkFieldName); // вместо вставки событий в HTML можно здесь их вставлять. В скобках функция для запуска 
+//keyup — это событие которое появлется при отпускнии клавиши. Подробнее в гугле "события jquery"
 
-
-function checkForm() {
-    if (document.getElementById('nameField').value!='' || document.getElementById('summaField').value!='' || document.getElementById('dateField').value!='') 
-        return true;
-    else return false;
+function checkFieldName() { 
+    var val = $('#nameField').val(); //это типа document.getElementById но на jQuery (надстройка над javascript)
+        if (val.length > 2) {
+            translateEN();
+            document.getElementById('hiddenBlock').style.display='';
+            $('#nameField').tooltip('destroy'); //всплывающая подсказка о 3 буквах
+        }
+        else if (val.length <= 2) {
+            // document.getElementById('send').disabled = 1;
+            document.getElementById('hiddenBlock').style.display='none';
+            $('#nameField').tooltip('show'); //всплывающая подсказка о 3 буквах
+            }
 };
+
 function datePropisRU(){
  var text=document.getElementById('dateField').value;
  var resultDate;
@@ -96,7 +105,7 @@ var kk=1;
  }
 
 function translateEN(){
-        if (checkForm()==true) {  //проверка Chekform перед выполнением функции
+
             var text=document.getElementById('nameField').value;
             var transl=new Array(); // массив по Е.Н. Тамарченко
                 transl['а']='a';
@@ -199,12 +208,9 @@ function translateEN(){
             			
                 } // конец перебора всех букв
             	result=result.toUpperCase(); // преобразование строки во все буквы прописные
-            if (result!='') {
+            
                 document.getElementById('nameResult').innerHTML=result;
                 document.getElementById('hiddenBlock').style.display='';
-            } 
-			
-        } // Проверка checkForm
-        else document.getElementById('nameResult').innerHTML='Заполните одно из полей!';
-                document.getElementById('hiddenBlock').style.display='';
+             
+
 };

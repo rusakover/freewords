@@ -18,16 +18,6 @@ font-family: 'PT Sans', sans-serif, Arial;
 	padding: 30px 0;
 	}
 
-.navbar-default {
-background: none;
-border:none;
-}
-
-.navbar-nav {
-float: left;
-margin: 20px 0 0 20px;
-}
-
 a {
 font-family: 'PT Mono', sans-serif, Arial;
 	color:rgba(23,51,176,1);}
@@ -50,66 +40,15 @@ h2, .h2 {
 .form-control:focus {
   border-color: rgba(138,237,182,1);
   -webkit-box-shadow: 0 0 18px rgba(138,237,182,1);
-          box-shadow: 2px 2px 6px rgba(138,237,182,1);
+          box-shadow: 2px 2px 4px rgba(138,237,182,1);
+
 }
 
-.form-group {
-margin-bottom: 25px;
-}
-
-.tooltip {
-white-space: pre;
-font-size: 14px;
-}
-
-.tooltip-inner {
-  background-color: #ffeebb;
-  color: black;
-}
-
-.tooltip.right .tooltip-arrow {
-  border-right-color: #ffeebb;
-}
-
-.tooltip.top .tooltip-arrow {
-  border-top-color: #ffeebb;
-}
-
-
-/* ------------------ Навигация ------------------------------------ */
-.navbar-default .navbar-nav > .open > a, 
-.navbar-default .navbar-nav > .open > a:hover, 
-.navbar-default .navbar-nav > .open > a:focus,
-.navbar-toggle .navbar-nav > .open > a, 
-.navbar-toggle .navbar-nav > .open > a:hover, 
-.navbar-toggle .navbar-nav > .open > a:focus {
-color: #FFF;
-background-color: rgba(21,56,212,1);
-border-radius: 3px 3px 0 0;
-}
-
-.navbar-default .navbar-nav > li > a:hover, 
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-toggle .navbar-nav > li > a:hover, 
-.navbar-toggle .navbar-nav > li > a:focus
-{
-color: #333;
-background-color: #ffeebb;
-border-radius: 3px;
-}
-
-
-.dropdown-menu {border: none;}
-
-.dropdown-menu > li > a:hover {
-background-color: #ffeebb;
-}
-
-
-/* ------------------ Заголовки ------------------------------------ */
+/* ------------------ Заголовки */
 .result {
 color: rgba(21,212,139,1); 
 }
+
 
 .lettering {
 	padding-bottom: 10px;
@@ -121,15 +60,7 @@ color: rgba(21,212,139,1);
 color: #888;
 }
 
-.zub .lead {
-font-family: 'PT Mono', sans-serif, Arial; 
-}
-
-.big {font-size: 1.8em;}
-
-.logo {max-width:200px; margin-top: 20px;}
-
-/*------------------ Кнопки ------------------------------------ */
+/*------------------ Кнопки */
 .butn {
 font-family: 'PT Mono', Arial;
    background-color: white;
@@ -157,34 +88,19 @@ font-family: 'PT Mono', Arial;
    color: white;
 }
 
-.butn:disabled {
-  display: none;
-  background-color: gray;
-   border: solid 3px gray;
-   text-align: center;
-   color: white;
-}
-
 .btn-primary {
 color: #888;
 background-color: white;
 border-color: #DDDDDD;
 }
 
-.btn-primary:hover {
-color: #333;
-background-color: #ffeebb;
-border-color: #ecd89c;
-
-}
-
-/*.dropdown-toggle.btn-default  {background-color: transparent;}
+.dropdown-toggle.btn-default  {background-color: transparent;}
 .btn-default:hover, .btn-default:focus,  .btn-default:active, .btn-default.active,
 .open > .dropdown-toggle.btn-default {
     background-color: rgba(21,56,212,1);
-    color: white;}*/
+    color: white;}
 
-.btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
 color: #fff;
 background-color: rgba(21,56,212,1);
 border-color: rgba(21,56,212,1);}
@@ -192,7 +108,7 @@ border-color: rgba(21,56,212,1);}
 input, .btn, .btn-success, .btn-lg { outline: none;}
 .input-lg {border-radius: 3px;}
 
-/* ------------------Зубчики внизу ------------------------------------ */
+/* ------------------Зубчики внизу */
 .zub {
   display: inline-block;
     vertical-align: middle;
@@ -215,7 +131,7 @@ input, .btn, .btn-success, .btn-lg { outline: none;}
         moz-linear-gradient(to top right, transparent 50.5%, #faf8dd 50.5%),
         moz-linear-gradient(to top left, transparent 50.5%, #faf8dd 50.5%);
     background-image:
-        linear-gradient(#fef6cb, #faf8dd),
+        linear-gradient(#faf8dd, #faf8dd),
         linear-gradient(to bottom right, transparent 100%, #333 100.5%),
         linear-gradient(to bottom left, transparent 100%, #333 100.5%),
         linear-gradient(to top right, transparent 50.5%, #faf8dd 50.5%),
@@ -225,20 +141,16 @@ input, .btn, .btn-success, .btn-lg { outline: none;}
     background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
     background-clip: padding-box, border-box, border-box, border-box, border-box;
     background-origin: padding-box, border-box, border-box, border-box, border-box;
-
 }
 
 .zub > .primary {
-  /*background:rgba(255, 255, 255, 0.5);*/
-  background: url(../img/herb.png) no-repeat;
-  background-position: 95% 95%;
-  overflow: visible;
-  /*border-bottom: 1px dashed white;*/
-  border-left: 1px solid red;
+  background:rgba(255, 255, 255, 0.5);
+  border-left: 2px solid red; 
   margin: 0 -20px 20px -20px; 
   padding: 10px 20px 10px 20px;
-  min-height: 100px;
 }
 
-
+.form-group {
+margin-bottom: 25px;
+}
 
