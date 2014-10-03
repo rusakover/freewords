@@ -1,6 +1,7 @@
 document.getElementById('hiddenBlock').style.display='none'; // скрываем блок Результата
 $('#nameField').keyup(checkFieldName); // вместо вставки событий в HTML можно здесь их вставлять. В скобках функция для запуска 
 //keyup — это событие которое появлется при отпускнии клавиши. Подробнее в гугле "события jquery"
+$('#dateField').blur(datePropisRU);
 
 $('#now').click(currentDate); // При клике на Сегодня запускает функцию подстановки даты  поле
 
