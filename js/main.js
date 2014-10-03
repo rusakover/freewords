@@ -240,18 +240,16 @@ function translateEN(){
             			
                 } // конец перебора всех букв
             	result=result.toUpperCase(); // преобразование строки во все буквы прописные
-            if (result!='') {
+
                 document.getElementById('nameResult').innerHTML=result;
                 document.getElementById('hiddenBlock').style.display='';
-            } 
+            
 			
-        } // Проверка checkForm
-        else document.getElementById('nameResult').innerHTML='Заполните одно из полей!';
-                document.getElementById('hiddenBlock').style.display='';
+
 };
 
 function translateDE(){
-        if (checkForm()==true) {  //проверка Chekform перед выполнением функции
+
             var text=document.getElementById('nameField').value;
             var transl=new Array(); // 
                 transl['а']='a';
